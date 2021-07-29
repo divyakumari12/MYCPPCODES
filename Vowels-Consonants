@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+char ch;
+    cout<<"Enter a character :"<<endl;
+    cin>> ch;
+    
+    if (((ch >='A')&& (ch<='Z')) ||((ch >='a') && (ch<='z')))
+    {
+        if((ch=='a')||(ch=='A')||  (ch=='e')||(ch=='E')||(ch=='i')||(ch=='O')||(ch=='o')||(ch=='U')||(ch=='u'))
+            cout<< ch << " is a vowel" <<endl;
+        else
+            cout<< ch<< " is a consonant";
+            
+    }
+    else if(ch>='0' && ch<='9')
+    {
+        cout<<ch <<"is a number";
+    }
+    else 
+    {
+        cout<<ch <<"is a special character";
+    }
+}
