@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+     int num2, num1,min;
+    cout<<"Enter the Two Numbers: ";
+    cin>>num1>>num2;
+    if(num1<num2)
+        min = num1;
+    else
+        min = num2;
+        cout<<"min="<<min<<endl;
+
+    return 0;
+}
