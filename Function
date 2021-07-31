@@ -1,0 +1,33 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int sum(int x, char ch, int y);
+
+int main()
+{
+    int a,b, c;
+    cout<<"Enter two numbers :"<<endl;
+    cin>>a>>b;
+    c=sum(a,'+', b); //function call
+    cout<<c<<endl;
+    cout<<sum(a, '-',b)<<endl;
+    cout<<sum(a, '*', b)<<endl;
+    cout<<sum(a, '/',b)<<endl;
+    cout<<sum(a, '^', b)<<endl;
+    return 0;
+}
+
+int sum(int x, char ch, int y) //function header
+{
+    switch (ch)
+    {
+        case '+': return x+y; break;//function body next 3 lines
+        case '-': return x-y;break;
+        case '*': return x*y;break;
+        case '/': return x/y;break;
+        case '^': return pow(x, y); break;
+        default: cout<<"unknown operator"<<endl;
+    
+    }
+}
