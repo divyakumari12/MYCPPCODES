@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float celcius,fahrenheit;
+    cout<<"Enter the temperature in celcius:"<<endl;
+    cin>>celcius;
+    fahrenheit=celcius*1.8+32;
+    cout<<"temperature in celcius is:"<<celcius<<endl;
+    cout<<"temperature in fahrenheit is:"<<fahrenheit<<endl;
+    
+
+    return 0;
+}
