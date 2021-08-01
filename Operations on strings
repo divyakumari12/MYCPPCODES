@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+string name;
+getline(cin,name);
+cout << name << endl;
+name.push_back('*');
+cout << name << endl;
+name.pop_back();
+cout << name << endl;
+name.resize(3);
+cout << name << endl;
+cout << name.capacity() << endl;
+name.shrink_to_fit();
+cout<<name.capacity() <<endl;
+return 0;
+}
+
