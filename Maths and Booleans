@@ -1,0 +1,20 @@
+#include <iostream>
+#include<cmath>
+
+
+using namespace std;
+
+int main()
+{
+    cout<<max(4,5)<<endl;
+    cout<<min(4,5)<<endl;
+   cout<<sqrt(16)<<endl;
+   cout<<round(4.5)<<endl;
+   cout<<log(2)<<endl;
+   bool SunRisesInTheEast=true;
+   bool HeIsaGirl=false;
+   cout<<SunRisesInTheEast<<endl;
+   cout<<HeIsaGirl;
+    return 0;
+}
+
